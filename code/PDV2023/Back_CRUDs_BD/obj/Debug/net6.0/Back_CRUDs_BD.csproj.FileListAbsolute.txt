@@ -1,0 +1,5 @@
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.csproj.AssemblyReference.cache
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.AssemblyInfoInputs.cache
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.AssemblyInfo.cs
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.csproj.CoreCompileInputs.cache
