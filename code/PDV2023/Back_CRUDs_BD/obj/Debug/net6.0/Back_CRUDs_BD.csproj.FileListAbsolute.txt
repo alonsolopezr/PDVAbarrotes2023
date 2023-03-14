@@ -3,3 +3,10 @@
 /Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.AssemblyInfoInputs.cache
 /Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.AssemblyInfo.cs
 /Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.csproj.CoreCompileInputs.cache
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/bin/Debug/net6.0/Back_CRUDs_BD.deps.json
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/bin/Debug/net6.0/Back_CRUDs_BD.dll
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/bin/Debug/net6.0/Back_CRUDs_BD.pdb
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.dll
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/refint/Back_CRUDs_BD.dll
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/Back_CRUDs_BD.pdb
+/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/obj/Debug/net6.0/ref/Back_CRUDs_BD.dll

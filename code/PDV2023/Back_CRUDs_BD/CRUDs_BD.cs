@@ -35,11 +35,11 @@ public abstract class CRUDs_BD
     public object dr;
 
     /////-----------METODOS---------------////
-    public abstract bool insertar(string tabla, List<string> campos, List<string> valores);
-    public abstract bool modificar(string tabla, List<string> campos, List<string> valores, int id);
+    public abstract bool insertar(string tabla, List<string> campos, List<ValoresAInsertar> valores);
+    public abstract bool modificar(string tabla, List<string> campos, List<ValoresAInsertar> valores, int id);
     public abstract bool borrar(string tabla, int id);
-    public abstract object consulta(string tabla);
-    public abstract object consulta(string tabla, string criterioBusqueda);
+    public abstract List<object[]> consulta(string tabla);
+    public abstract List<object[]> consulta(string tabla, string criterioBusqueda);
 
 }
 
