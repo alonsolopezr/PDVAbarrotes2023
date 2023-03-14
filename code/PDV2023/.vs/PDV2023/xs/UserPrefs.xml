@@ -1,4 +1,35 @@
-﻿<Properties>
-  <MonoDevelop.Ide.ItemProperties.Back__CRUDs__BD FirstBuild="True" />
+﻿<Properties StartupConfiguration="{E7663DF8-24E5-4834-BAB5-9C614A20F531}|Default">
+  <MonoDevelop.Ide.ItemProperties.PruebaDEBack FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Back_CRUDs_BD/PruebaInstancia.cs">
+    <Files>
+      <File FileName="Back_CRUDs_BD/Class1.cs" Line="9" Column="1" />
+      <File FileName="Back_CRUDs_BD/DBMS.cs" Line="12" Column="11" />
+      <File FileName="Back_CRUDs_BD/MySql.cs" Line="15" Column="84" />
+      <File FileName="Back_CRUDs_BD/PruebaInstancia.cs" Line="6" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PDV2023" expanded="True">
+            <Node name="Back_CRUDs_BD" expanded="True">
+              <Node name="PruebaInstancia.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="PDV2023" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/CRUDs_BD.cs" relfile="Back_CRUDs_BD/CRUDs_BD.cs" line="5" column="1" />
+    <Breakpoint file="/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/MySql.cs" relfile="Back_CRUDs_BD/MySql.cs" line="10" column="1" />
+    <Breakpoint file="/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/MySql.cs" relfile="Back_CRUDs_BD/MySql.cs" line="27" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
