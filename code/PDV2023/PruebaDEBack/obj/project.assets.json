@@ -1805,37 +1805,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/aloncello/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Uesda\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/PruebaDEBack/PruebaDEBack.csproj",
+      "projectUniqueName": "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\PruebaDEBack\\PruebaDEBack.csproj",
       "projectName": "PruebaDEBack",
-      "projectPath": "/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/PruebaDEBack/PruebaDEBack.csproj",
-      "packagesPath": "/Users/aloncello/.nuget/packages/",
-      "outputPath": "/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/PruebaDEBack/obj/",
+      "projectPath": "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\PruebaDEBack\\PruebaDEBack.csproj",
+      "packagesPath": "C:\\Users\\Uesda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\PruebaDEBack\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "/Users/aloncello/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Uesda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/Back_CRUDs_BD.csproj": {
-              "projectPath": "/Users/aloncello/code/dotNET/poo/PDVAbarrotes2023/code/PDV2023/Back_CRUDs_BD/Back_CRUDs_BD.csproj"
+            "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\Back_CRUDs_BD\\Back_CRUDs_BD.csproj": {
+              "projectPath": "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\Back_CRUDs_BD\\Back_CRUDs_BD.csproj"
             }
           }
         }
@@ -1865,7 +1867,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
