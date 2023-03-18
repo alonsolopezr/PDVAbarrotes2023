@@ -107,6 +107,55 @@ namespace Middle_Abarrotes_PDV
 
 			return precio;
 		}
+
+        public Producto consultarPorCodBarras(string codBarras)
+        {
+			Producto prodResultado = new Producto();
+
+            List<object[]> res = this.bd.consulta("productos", "cod_barras=" + codBarras);
+            //validamos que traig un elemento la lista
+            if (res.Count == 1)
+            {
+				Presentacion presentacionTexto ;
+                object[] tempo = res[0];
+				prodResultado.id = int.Parse(tempo[0].ToString());
+				prodResultado.nombre = tempo[1].ToString();
+				prodResultado.descripcion = tempo[2].ToString();
+                prodResultado.precio = double.Parse(tempo[3].ToString());
+				prodResultado.cod_barras = tempo[4].ToString();
+				prodResultado.imagen = tempo[5].ToString();
+				prodResultado.marca = tempo[6].ToString();
+
+				switch (tempo[7].ToString())
+				{
+					case "CAJA":
+						presentacionTexto = Presentacion.CAJA;
+                        break;
+					case "KILO":
+						presentacionTexto = Presentacion.KILO;
+                        break;
+					case "LITRO":
+						presentacionTexto = Presentacion.LITRO;
+                        break;
+					case "PIEZA":
+						presentacionTexto = Presentacion.PIEZA;
+                        break;
+					default:
+						presentacionTexto = Presentacion.KILO;
+						break;
+
+				}
+				prodResultado.unidad = presentacionTexto;
+
+            }
+            else
+            {
+                Producto.msgError = "Código de barras no existe en catalogo de productos. "+this.bd.msgError;
+				prodResultado = null;
+            }
+
+            return prodResultado;
+        }
     }
 }
 
