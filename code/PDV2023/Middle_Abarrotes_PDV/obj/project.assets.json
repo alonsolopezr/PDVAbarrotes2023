@@ -1811,9 +1811,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\Middle_Abarrotes_PDV\\Middle_Abarrotes_PDV.csproj",
-      "projectName": "Middle_Abarrotes_PDV",
-      "projectPath": "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\Middle_Abarrotes_PDV\\Middle_Abarrotes_PDV.csproj",
+      "projectUniqueName": "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\Middle_Abarrotes_PDV\\Middle_gamestore_PDV.csproj",
+      "projectName": "Middle_gamestore_PDV",
+      "projectPath": "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\Middle_Abarrotes_PDV\\Middle_gamestore_PDV.csproj",
       "packagesPath": "C:\\Users\\Uesda\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Uesda\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\Middle_Abarrotes_PDV\\obj\\",
       "projectStyle": "PackageReference",

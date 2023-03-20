@@ -1,0 +1,15 @@
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\bin\Debug\net6.0\Middle_gamestore_PDV.deps.json
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\bin\Debug\net6.0\Middle_gamestore_PDV.dll
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\bin\Debug\net6.0\Middle_gamestore_PDV.pdb
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\bin\Debug\net6.0\Back_CRUDs_BD.dll
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\bin\Debug\net6.0\Back_CRUDs_BD.pdb
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\Middle_gamestore_PDV.csproj.AssemblyReference.cache
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\Middle_gamestore_PDV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\Middle_gamestore_PDV.AssemblyInfoInputs.cache
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\Middle_gamestore_PDV.AssemblyInfo.cs
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\Middle_gamestore_PDV.csproj.CoreCompileInputs.cache
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\Middle_gamestore_PDV.csproj.CopyComplete
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\Middle_gamestore_PDV.dll
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\refint\Middle_gamestore_PDV.dll
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\Middle_gamestore_PDV.pdb
+C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Middle_Abarrotes_PDV\obj\Debug\net6.0\ref\Middle_gamestore_PDV.dll
