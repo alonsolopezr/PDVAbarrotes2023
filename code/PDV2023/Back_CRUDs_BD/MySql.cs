@@ -30,50 +30,55 @@ namespace Back_CRUDs_BD
             {
                 //abrir una conexion
                 if(con.State == System.Data.ConnectionState.Closed)
-                { 
-                    con.Open();
-                    //vamos a concatenar todos los CAMPOS en un solo string, separados por ,
-                    string camposConcat = "";
-                    foreach (var campo in campos)
+                con.Open();
+                //vamos a concatenar todos los CAMPOS en un solo string, separados por ,
+                string camposConcat = "";
+                foreach (var campo in campos)
+                {
+                    camposConcat += campo + ",";
+                }
+                //COMO QUITAR LA ULTIMA COMA??   XYZ = 3 (0,1,2)
+                camposConcat = camposConcat.Remove(camposConcat.Length-1);
+                string valsConcat="";
+                //concatenamos los valores, y si llevan apostrofe
+                foreach (ValoresAInsertar valor in valores)
+                {
+
+                    if (valor.llevaApostrofes) //????
                     {
-                        camposConcat += campo + ",";
+                        valsConcat += "'" + valor + "',";
                     }
-                    //COMO QUITAR LA ULTIMA COMA??   XYZ = 3 (0,1,2)
-                    camposConcat = camposConcat.Remove(camposConcat.Length-1);
-                    string valsConcat="";
-                    //concatenamos los valores, y si llevan apostrofe
-                    for (int i = 0; i < valores.Count; i++)
-                    {
-                        //concatenar un nombreDeCampo = valor (con sus '')
-                        valsConcat +=  (valores[i].llevaApostrofes ? "'" + valores[i].valor + "'," : valores[i].valor + ",");
-                    }
-                    valsConcat = valsConcat.Remove(valsConcat.Length - 1);
-                    //definir el query en el MysqlCommand
-                    commando = new MySqlCommand($"INSERT INTO {tabla} ({camposConcat}) VALUES({valsConcat});");
-                    //Relacionar el COMMAND con la CONEXION
-                    commando.Connection = con;
-                    //EJECUTAR EL QUERY
-                    int res = commando.ExecuteNonQuery();
-                    //Validar que se ejecuto correctamente
-                    if (res == 1)
-                        resultado = true;
                     else
                     {
-                        resultado = false;
-                        this.msgError = "NO SE REGISTRÓ EL NUEVO RENGLÓN";
-                    }
-                        /// si no .... msgError
+                        valsConcat += valor + ",";
                     }
                 }
+                valsConcat = valsConcat.Remove(valsConcat.Length - 1);
+                //definir el query en el MysqlCommand
+                commando = new MySqlCommand($"INSERT INTO {tabla} ({camposConcat}) VALUES({valsConcat})");
+                //Relacionar el COMMAND con la CONEXION
+                commando.Connection = con;
+                //EJECUTAR EL QUERY
+                int res = commando.ExecuteNonQuery();
+                //Validar que se ejecuto correctamente
+                if (res == 1)
+                    resultado = true;
+                else
+                {
+                    resultado = false;
+                    this.msgError = "NO SE REGISTRÓ EL NUEVO RENGLÓN";
+                }
+                /// si no .... msgError
+            }
             catch (MySqlException mex)
             {
                 //trono la conexion o el insert
-                this.msgError = " ERROR AL CONECTARNOS A LA BASE DE DATOS " +mex.Message;
+                this.msgError = "No se pudo insertar el nuevo registro, por que no se conectó a la BD. " +mex.Message;
             }
             catch (Exception ex)
             {
                 //trono la conexion o el insert
-                this.msgError = " NO SE PUDO REGISTRAR UN NUEVO PRODUCTO, ERROR DE WINDWOS " + ex.Message;
+                this.msgError = "No se pudo insertar el nuevo registro, por error general de windows. " + ex.Message;
             }
             finally
             {
@@ -94,15 +99,22 @@ namespace Back_CRUDs_BD
                 if (con.State == System.Data.ConnectionState.Closed)
                     con.Open();
                 string camposConcat = "";
-                //Vemos si lleva apostrofe
+                //definir COMMMAND
                 for (int i = 0; i < campos.Count; i++)
                 {
                     //concatenar un nombreDeCampo = valor (con sus '')
                     camposConcat += campos[i] + "=" + (valores[i].llevaApostrofes ? "'" + valores[i].valor + "'," : valores[i].valor + ",");
+                    //if (valores[i].llevaApostrofes)
+                    //    camposConcat += campos[i] + "=" + "'" + valores[i].valor + "',";
+                    //else
+                    //    camposConcat += campos[i] + "="  + valores[i].valor + ",";
                 }
-                camposConcat = camposConcat.Remove(camposConcat.Length - 1);//quitamos la ultima coma
-                //damos la query
-                commando = new MySqlCommand($"UPDATE {tabla} SET {camposConcat} WHERE id={id};");
+                camposConcat = camposConcat.Remove(camposConcat.Length - 1);
+                
+                commando = new MySqlCommand($"UPDATE {tabla} SET {camposConcat} WHERE id={id}");
+
+                //UPDATE productos SET nombre='CHEETOS', precio=30.05, cod_barras='02323922882999392' WHERE id=90;
+
                 //asociar la conexion al command
                 commando.Connection = con;
                 //ejecutar el command
@@ -114,10 +126,10 @@ namespace Back_CRUDs_BD
                     resultado = false;
 
             } catch (MySqlException mex) {
-                this.msgError = "ERROR, PROBLEMAS DE CONEXÍÓN " + mex.Message;
+                this.msgError = "No se pudo moddificar el registro por problema de conexión. " + mex.Message;
 
             } catch (Exception ex) {
-                this.msgError = "ERROR AL MODIFICAR POR PROBLEMA DE WINDOWS" + ex.Message;
+                this.msgError = "No se pudo modificar el registro por problema de windows. " + ex.Message;
             } finally {
                 //cerramos conex
                 if (con.State == System.Data.ConnectionState.Open)
@@ -136,9 +148,7 @@ namespace Back_CRUDs_BD
             {
                 if (con.State == System.Data.ConnectionState.Closed)
                     con.Open();
-                //Definimos el comando. 
-                commando = new MySqlCommand($"DELETE FROM {tabla} WHERE id={id};");
-                //Relacionamos el comando con la conexión
+                commando = new MySqlCommand($"DELETE FROM {tabla} WHERE id={id}");
                 commando.Connection = con;
                 int res = commando.ExecuteNonQuery();
                 if (res == 1)
@@ -148,22 +158,25 @@ namespace Back_CRUDs_BD
                 else
                 {
                     resultado = false;
+                    //msgError
                 }
             }
             catch (MySqlException mex)
             {
-                this.msgError = "LA BASE DE DATOS NO PUDO ELIMINAR EL REGISTRO " + mex.Message;
+                this.msgError = "NO se pudo borrar el registro, por error de BD. " + mex.Message;
             }
             catch (Exception ex)
             {
-                this.msgError = "ERROR AL ELIMINAR PRODUCTO " + ex.Message;
+                this.msgError = "NO se pudo borrar el registro. " + ex.Message;
             }
             finally {
                 if (con.State == System.Data.ConnectionState.Open)
                     con.Close();
             }
+
             //devolvemos si se boorró o nó
             return resultado;
+            
         }
 
         public override List<object[]> consulta(string tabla)
@@ -176,7 +189,7 @@ namespace Back_CRUDs_BD
                 if(con.State == System.Data.ConnectionState.Closed)
                     con.Open();
                 //establecer el QUERY----> SELECT * FROM tabla
-                commando = new MySqlCommand($"SELECT * FROM {tabla};");
+                commando = new MySqlCommand($"SELECT * FROM {tabla}");
                 commando.Connection = con;
                 //ejecutar el query
                 dr = commando.ExecuteReader();
@@ -185,7 +198,9 @@ namespace Back_CRUDs_BD
                 {
                     //leemos todos los registros en un while
                     while (dr.Read())
-                    {   
+                    {
+                        //cuantos campos trae el registro??
+                        
                         //cada elemento es un arreglo de objects
                         object[] registro = new object[dr.FieldCount];
                         for (int i = 0; i < dr.FieldCount; i++)
@@ -195,19 +210,20 @@ namespace Back_CRUDs_BD
                         //lo cargamos a la lista
                         resultado.Add(registro);
                     }
+                    //?? ya esta listo
                 }
                 else {
-                    this.msgError = $"NO SE ENCONTRARON REGISTROS EXISTENTES {tabla}.";
+                    this.msgError = $"No existen registros en la tabla {tabla}.";
                     //que devolvemos??
                     resultado = new List<object[]>(); //"chetos", "bolsa de 45gr", 34.00, "234234234324"
                 }
             }
             catch (MySqlException mex)
             {
-                this.msgError = "ERROR AL REALIZAR CONSULTAR A LA BASE DE DATOS " + mex.Message;
+                this.msgError = "No se pudo hacer la consulta en el servidor de BD. " + mex.Message;
             }
             catch (Exception ex){
-               this.msgError = "ERROR DE WINDOWS" + ex.Message;
+               this.msgError = "No se pudo hacer la consulta por error de windows. " + ex.Message;
             }
             finally {
                 if(con.State==System.Data.ConnectionState.Open)
@@ -226,7 +242,7 @@ namespace Back_CRUDs_BD
                 if (con.State == System.Data.ConnectionState.Closed)
                     con.Open();
                 //establecer el QUERY----> SELECT * FROM tabla
-                commando = new MySqlCommand($"SELECT * FROM {tabla} WHERE {criterioBusqueda};");
+                commando = new MySqlCommand($"SELECT * FROM {tabla} WHERE {criterioBusqueda}");
                 //ejecutar el query
                 dr = commando.ExecuteReader();
                 //validar el resultado del query, y preparar para devolver datos
@@ -235,6 +251,8 @@ namespace Back_CRUDs_BD
                     //leemos todos los registros en un while
                     while (dr.Read())
                     {
+                        //cuantos campos trae el registro??
+
                         //cada elemento es un arreglo de objects
                         object[] registro = new object[dr.FieldCount];
                         for (int i = 0; i < dr.FieldCount; i++)
@@ -244,21 +262,22 @@ namespace Back_CRUDs_BD
                         //lo cargamos a la lista
                         resultado.Add(registro);
                     }
+                    //?? ya esta listo
                 }
                 else
                 {
-                    this.msgError = $"ERROR AL ENCONTAR REGISTRO {tabla}.";
+                    this.msgError = $"No existen registros en la tabla {tabla}.";
                     //que devolvemos??
                     resultado = new List<object[]>(); //"chetos", "bolsa de 45gr", 34.00, "234234234324"
                 }
             }
             catch (MySqlException mex)
             {
-                this.msgError = "ERROR AL CONSULTAR LA BASE DE DATOS " + mex.Message;
+                this.msgError = "No se pudo hacer la consulta en el servidor de BD. " + mex.Message;
             }
             catch (Exception ex)
             {
-                this.msgError = "ERROR DE WINDWOS " + ex.Message;
+                this.msgError = "No se pudo hacer la consulta por error de windows. " + ex.Message;
             }
             finally
             {

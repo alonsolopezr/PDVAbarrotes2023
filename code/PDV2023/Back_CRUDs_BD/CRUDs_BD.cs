@@ -7,7 +7,7 @@ public abstract class CRUDs_BD
     private DBMS dbms;
     protected string tabla;
     protected List<string> campos = new List<string>();
-    protected List<ValoresAInsertar> valores = new List<ValoresAInsertar>();
+    protected List<string> valores = new List<string>();
     //vars para el connectionSTring
     protected string host;
     protected string us;

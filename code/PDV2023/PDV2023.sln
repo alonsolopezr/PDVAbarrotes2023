@@ -5,9 +5,11 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Back_CRUDs_BD", "Back_CRUDs_BD\Back_CRUDs_BD.csproj", "{3CEB8CB7-EA2C-40EB-AB48-7DF6A86C0466}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middle_gamestore_PDV", "Middle_Abarrotes_PDV\Middle_gamestore_PDV.csproj", "{D1234DB8-F094-4484-9921-9F828D947951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaDEBack", "PruebaDEBack\PruebaDEBack.csproj", "{E7663DF8-24E5-4834-BAB5-9C614A20F531}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinForm_gamestore_pdv2", "WinForm_gamestore_pdv\WinForm_gamestore_pdv2.csproj", "{8EF73150-EAD6-47D6-93C5-25558615FAB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middle_Abarrotes_PDV", "Middle_Abarrotes_PDV\Middle_Abarrotes_PDV.csproj", "{D1234DB8-F094-4484-9921-9F828D947951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm_Abarrotes_PDV", "WinForm_Abarrotes_PDV\WinForm_Abarrotes_PDV.csproj", "{5FDA5C7C-AF28-41D7-91F4-EEF0F13C9C99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +21,18 @@ Global
 		{3CEB8CB7-EA2C-40EB-AB48-7DF6A86C0466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CEB8CB7-EA2C-40EB-AB48-7DF6A86C0466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CEB8CB7-EA2C-40EB-AB48-7DF6A86C0466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7663DF8-24E5-4834-BAB5-9C614A20F531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7663DF8-24E5-4834-BAB5-9C614A20F531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7663DF8-24E5-4834-BAB5-9C614A20F531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7663DF8-24E5-4834-BAB5-9C614A20F531}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1234DB8-F094-4484-9921-9F828D947951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1234DB8-F094-4484-9921-9F828D947951}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1234DB8-F094-4484-9921-9F828D947951}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1234DB8-F094-4484-9921-9F828D947951}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EF73150-EAD6-47D6-93C5-25558615FAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EF73150-EAD6-47D6-93C5-25558615FAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EF73150-EAD6-47D6-93C5-25558615FAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EF73150-EAD6-47D6-93C5-25558615FAB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FDA5C7C-AF28-41D7-91F4-EEF0F13C9C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FDA5C7C-AF28-41D7-91F4-EEF0F13C9C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FDA5C7C-AF28-41D7-91F4-EEF0F13C9C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FDA5C7C-AF28-41D7-91F4-EEF0F13C9C99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

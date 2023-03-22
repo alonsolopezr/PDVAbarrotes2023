@@ -1,9 +1,9 @@
-﻿using System;
+﻿
+using System;
 namespace Back_CRUDs_BD
 {
 	public class ValoresAInsertar
 	{
-
         public string valor;
 		public bool llevaApostrofes;
 
