@@ -22,7 +22,7 @@ namespace Middle_Abarrotes_PDV
 		public Producto()
 		{
 			//crear una instancia de MYSQL a mi bd
-			bd = new Back_CRUDs_BD.MySql("localhost", "root", "root", "PDV2023_bd", "8889");
+			bd = new Back_CRUDs_BD.MySql("localhost", "root", "", "pdvabarrotes_bd", "3306");
 		}
 
 		//métodos de la clase CRUD
