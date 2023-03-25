@@ -22,3 +22,15 @@ C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debu
 C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\refint\Back_CRUDs_BD.dll
 C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\Back_CRUDs_BD.pdb
 C:\Users\Uesda\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\ref\Back_CRUDs_BD.dll
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\bin\Debug\net6.0\Back_CRUDs_BD.deps.json
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\bin\Debug\net6.0\Back_CRUDs_BD.dll
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\bin\Debug\net6.0\Back_CRUDs_BD.pdb
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\Back_CRUDs_BD.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\Back_CRUDs_BD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\Back_CRUDs_BD.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\Back_CRUDs_BD.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\Back_CRUDs_BD.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\Back_CRUDs_BD.dll
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\refint\Back_CRUDs_BD.dll
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\Back_CRUDs_BD.pdb
+C:\Users\Usuario\source\repos\PDVAbarrotes2023\code\PDV2023\Back_CRUDs_BD\obj\Debug\net6.0\ref\Back_CRUDs_BD.dll

@@ -243,6 +243,8 @@ namespace Back_CRUDs_BD
                     con.Open();
                 //establecer el QUERY----> SELECT * FROM tabla
                 commando = new MySqlCommand($"SELECT * FROM {tabla} WHERE {criterioBusqueda}");
+                //relacionar conexion a command
+                commando.Connection = con;
                 //ejecutar el query
                 dr = commando.ExecuteReader();
                 //validar el resultado del query, y preparar para devolver datos
