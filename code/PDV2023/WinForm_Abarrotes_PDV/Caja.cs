@@ -40,7 +40,7 @@ namespace WinForm_Abarrotes_PDV
                 int col = dGridVentas.ColumnCount - 1;
                 double subtotal = 0;
                 //totalizar 
-                for (int i = 1; i < dGridVentas.Rows.Count; i++)
+                for (int i = 0; i < dGridVentas.Rows.Count-1; i++)
                 {
                     subtotal += double.Parse(dGridVentas.Rows[i].Cells[col].Value.ToString());
 
