@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaDEBack", "PruebaDEBac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middle_Abarrotes_PDV", "Middle_Abarrotes_PDV\Middle_Abarrotes_PDV.csproj", "{D1234DB8-F094-4484-9921-9F828D947951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm_Abarrotes_PDV", "WinForm_Abarrotes_PDV\WinForm_Abarrotes_PDV.csproj", "{5FDA5C7C-AF28-41D7-91F4-EEF0F13C9C99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinForm_Abarrotes_PDV", "WinForm_Abarrotes_PDV\WinForm_Abarrotes_PDV.csproj", "{5FDA5C7C-AF28-41D7-91F4-EEF0F13C9C99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{8165150E-43AB-4CC8-94AA-33B5D97795C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
