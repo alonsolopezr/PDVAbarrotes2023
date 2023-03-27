@@ -156,6 +156,16 @@ namespace Middle_Abarrotes_PDV
 
             return prodResultado;
         }
+
+        public bool modificar(string text1, string text2, double v, string text3, string text4, string text5, Presentacion valorPresentacion)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool borrar(string text1, string text2, double v, string text3, string text4, string text5, Presentacion valorPresentacion)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

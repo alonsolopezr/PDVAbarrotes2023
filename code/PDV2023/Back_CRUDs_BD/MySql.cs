@@ -12,7 +12,7 @@ namespace Back_CRUDs_BD
         MySqlCommand commando;
         MySqlDataReader dr;
 
-		public MySql(string host, string us, string pwd, string bd, string puerto="3306"):base()
+		public MySql(string host, string us, string pwd, string bd, string puerto="9764"):base()
 		{
             //vamos a inicializar los valores de conexión en el connectionString
             this.connectionString = $"Server={host};Port={puerto};Database={bd};Uid={us};Pwd={pwd};";

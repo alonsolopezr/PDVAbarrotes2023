@@ -1833,23 +1833,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\danjo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\WinForm_Abarrotes_PDV\\WinForm_Abarrotes_PDV.csproj",
+      "projectUniqueName": "C:\\Users\\danjo\\source\\repos\\UthTrabajos\\Venta\\PDVAbarrotes2023\\code\\PDV2023\\WinForm_Abarrotes_PDV\\WinForm_Abarrotes_PDV.csproj",
       "projectName": "WinForm_Abarrotes_PDV",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\WinForm_Abarrotes_PDV\\WinForm_Abarrotes_PDV.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\WinForm_Abarrotes_PDV\\obj\\",
+      "projectPath": "C:\\Users\\danjo\\source\\repos\\UthTrabajos\\Venta\\PDVAbarrotes2023\\code\\PDV2023\\WinForm_Abarrotes_PDV\\WinForm_Abarrotes_PDV.csproj",
+      "packagesPath": "C:\\Users\\danjo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\danjo\\source\\repos\\UthTrabajos\\Venta\\PDVAbarrotes2023\\code\\PDV2023\\WinForm_Abarrotes_PDV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\danjo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1858,14 +1858,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\Middle_Abarrotes_PDV\\Middle_Abarrotes_PDV.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\source\\repos\\PDVAbarrotes2023\\code\\PDV2023\\Middle_Abarrotes_PDV\\Middle_Abarrotes_PDV.csproj"
+            "C:\\Users\\danjo\\source\\repos\\UthTrabajos\\Venta\\PDVAbarrotes2023\\code\\PDV2023\\Middle_Abarrotes_PDV\\Middle_Abarrotes_PDV.csproj": {
+              "projectPath": "C:\\Users\\danjo\\source\\repos\\UthTrabajos\\Venta\\PDVAbarrotes2023\\code\\PDV2023\\Middle_Abarrotes_PDV\\Middle_Abarrotes_PDV.csproj"
             }
           }
         }
@@ -1898,7 +1899,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
