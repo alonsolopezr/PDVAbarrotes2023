@@ -15,10 +15,12 @@ namespace WinForm_Abarrotes_PDV
     {
         //instanca de Producto
         Producto prodAVender;
+        Venta venta;
         public Caja()
         {
             InitializeComponent();
             prodAVender= new Producto();
+            venta = new Venta();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -49,6 +51,30 @@ namespace WinForm_Abarrotes_PDV
             }
 
 
+        }
+
+        private void btnPagar_Click(object sender, EventArgs e)
+        {
+            //preparamos las vars para registra la venta
+            List<ProductoAVender> prodsAVender = new List<ProductoAVender>();
+            for (int i = 0; i < dGridVentas.Rows.Count-1; i++)
+            {
+
+                //agregar un ProductoAVender a la lista
+                ProductoAVender prodVender = new ProductoAVender(int.Parse(dGridVentas.Rows[i].Cells[0].Value.ToString()), int.Parse(dGridVentas.Rows[i].Cells[3].Value.ToString()));
+                prodsAVender.Add(prodVender);
+                
+            }
+
+            double cambio = venta.registrarVenta(1, double.Parse(txtTotal.Text), double.Parse(txtEfectivo.Text), prodsAVender);
+            //si hay error
+            if (cambio == -1)
+            {
+                MessageBox.Show("Error al registrar la venta", Venta.msgError);
+            }
+            else {
+                MessageBox.Show("Registrada Correcta", "Su cambio es $"+cambio+", vuelva pronto.");
+            }
         }
     }
 }
