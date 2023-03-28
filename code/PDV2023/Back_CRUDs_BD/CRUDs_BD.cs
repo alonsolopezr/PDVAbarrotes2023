@@ -41,5 +41,7 @@ public abstract class CRUDs_BD
     public abstract List<object[]> consulta(string tabla);
     public abstract List<object[]> consulta(string tabla, string criterioBusqueda);
 
+    public abstract object consulta1SoloValor(string campo, string tabla, string criterioBusqueda);
+
 }
 

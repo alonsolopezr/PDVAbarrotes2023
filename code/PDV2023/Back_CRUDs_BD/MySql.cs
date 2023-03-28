@@ -46,11 +46,11 @@ namespace Back_CRUDs_BD
 
                     if (valor.llevaApostrofes) //????
                     {
-                        valsConcat += "'" + valor + "',";
+                        valsConcat += "'" + valor.valor + "',";
                     }
                     else
                     {
-                        valsConcat += valor + ",";
+                        valsConcat += valor.valor + ",";
                     }
                 }
                 valsConcat = valsConcat.Remove(valsConcat.Length - 1);
@@ -271,6 +271,48 @@ namespace Back_CRUDs_BD
                     this.msgError = $"No existen registros en la tabla {tabla}.";
                     //que devolvemos??
                     resultado = new List<object[]>(); //"chetos", "bolsa de 45gr", 34.00, "234234234324"
+                }
+            }
+            catch (MySqlException mex)
+            {
+                this.msgError = "No se pudo hacer la consulta en el servidor de BD. " + mex.Message;
+            }
+            catch (Exception ex)
+            {
+                this.msgError = "No se pudo hacer la consulta por error de windows. " + ex.Message;
+            }
+            finally
+            {
+                if (con.State == System.Data.ConnectionState.Open)
+                    con.Close();
+            }
+            return resultado;
+        }
+
+        public override object consulta1SoloValor(string campo, string tabla, string criterioBusqueda)
+        {
+            object resultado = new object();
+            int correscto = 0;
+            //hacer el bloque try catch
+            try
+            {
+                //validar conexion y abrirla
+                if (con.State == System.Data.ConnectionState.Closed)
+                    con.Open();
+                //establecer el QUERY----> SELECT * FROM tabla
+                commando = new MySqlCommand($"SELECT {campo} FROM {tabla} WHERE {criterioBusqueda}");
+                //relacionar conexion a command
+                commando.Connection = con;
+                //ejecutar el query
+                resultado= commando.ExecuteScalar();
+
+                if (resultado != null)
+                    correscto = 1;
+                else
+                {
+                    this.msgError = $"No existen registros en la tabla {tabla}.";
+                    //que devolvemos??
+                    resultado = null; 
                 }
             }
             catch (MySqlException mex)
